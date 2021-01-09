@@ -178,6 +178,7 @@
 				<!-- Copyright -->
 					<ul class="copyright">
 						<li>&copy; All rights reserved.</li>
+                        <li>2021</li>
 					</ul>
 
 			</div>
