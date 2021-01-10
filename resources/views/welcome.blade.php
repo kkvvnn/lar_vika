@@ -59,6 +59,7 @@
 
 							<header>
 								<h2 class="alt">Hi! I'm Vika</h2>
+								<p>-</p>
 							</header>
 
 							<footer>
