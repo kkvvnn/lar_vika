@@ -20,9 +20,9 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="/images/avatar.png" alt="" /></span>
+							<span class="image avatar48"><img src="/images/avatar.jpg" alt="" /></span>
 							<h1 id="title">Vika</h1>
-							<p>stylist</p>
+							<p>Stylist</p>
 						</div>
 
 					<!-- Nav -->
