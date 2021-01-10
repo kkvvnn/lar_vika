@@ -21,7 +21,7 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="/images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Vika</h1>
+							<a href=""><h1 id="title">Vika</h1></a>
 							<p>Stylist</p>
 						</div>
 
@@ -44,6 +44,7 @@
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="#" class="icon brands fa-vk"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
