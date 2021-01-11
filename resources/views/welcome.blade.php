@@ -21,7 +21,7 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="/images/avatar.jpg" alt="" /></span>
-							<a href=""><h1 id="title">Vika</h1></a>
+							<a href="{{ route('welcome') }}"><h1 id="title">Vika</h1></a>
 							<p>Stylist</p>
 						</div>
 
