@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +16,19 @@
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
+
+Route::get('/message', function (Request $request) {
+
+    $name       = $request->input('name');
+    $email      = $request->input('email');
+    $message    = $request->input('message');
+
+    return view('message', [
+        'name'      => $name,
+        'email'     => $email,
+        'message'   => $message,
+    ]);
+})->name('message');
 
 Auth::routes();
 
