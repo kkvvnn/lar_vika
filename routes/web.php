@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use Validator;
+// use Validator;
 use App\Message;
 
 /*
@@ -59,6 +59,16 @@ Route::post('/message', function (Request $request) {
         'message'   => $message,
     ]);
 })->name('message');
+
+Route::get('/ssd', function () {
+
+    
+
+    $messages = App\Message::all();
+    
+
+return view('ssd', ['messages' => $messages]);
+})->name('ssd');
 
 Auth::routes();
 
