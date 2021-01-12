@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/message', function (Request $request) {
 
-    $name       = $request->input('name');
+    $name       = mb_convert_case($request->input('name'), MB_CASE_TITLE, "UTF-8");
     $email      = $request->input('email');
     $message    = $request->input('message');
 
