@@ -110,10 +110,10 @@
 			<p>Томск.</p>
 
 			@if ($errors->any())
-    			<div class="alert alert-danger">
+    			<div>
     			    <ul>
     			        @foreach ($errors->all() as $error)
-    			            <li>{{ $error }}</li>
+    			            <li class="alert alert-danger">{{ $error }}</li>
     			        @endforeach
     			    </ul>
     			</div>
