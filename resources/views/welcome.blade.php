@@ -122,9 +122,10 @@
 			<form method="get" action="{{ route('message') }}">
 				{{ csrf_field() }}
 				<div class="row">
-					<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" value="{{ old('name') }}"/></div>
-					<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" value="{{ old('email') }}"/></div>
+					<div class="col-6 col-12-mobile"><label for="name">Имя</label><input type="text" name="name" placeholder="Name" value="{{ old('name') }}"/></div>
+					<div class="col-6 col-12-mobile"><label for="email">E-mail</label><input type="text" name="email" placeholder="Email" value="{{ old('email') }}"/></div>
 					<div class="col-12">
+						<label for="message">Сообщение</label>
 						<textarea name="message" placeholder="Message">{{ old('message') }}</textarea>
 					</div>
 					<div class="col-12">
