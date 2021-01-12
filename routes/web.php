@@ -13,6 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
+Artisan::call('view:clear');
+
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
