@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Validator;
+use App\Message;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/message', function (Request $request) {
+Route::post('/message', function (Request $request) {
 
     $name       = mb_convert_case($request->input('name'), MB_CASE_TITLE, "UTF-8");
     $email      = $request->input('email');
@@ -44,6 +45,13 @@ Route::get('/message', function (Request $request) {
                     ->withInput();
     }
 
+    $mess = new Message;
+
+        $mess->name = $name;
+        $mess->email = $email;
+        $mess->message = $message;
+
+        $mess->save();
 
     return view('message', [
         'name'      => $name,

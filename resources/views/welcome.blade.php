@@ -119,7 +119,7 @@
     			</div>
 			@endif
 
-			<form method="get" action="{{ route('message') }}">
+			<form method="post" action="{{ route('message') }}">
 				{{ csrf_field() }}
 				<div class="row">
 					<div class="col-6 col-12-mobile"><label for="name">Имя</label><input type="text" name="name" placeholder="Name" value="{{ old('name') }}"/></div>
