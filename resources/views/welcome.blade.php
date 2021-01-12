@@ -109,6 +109,16 @@
 
 			<p>Томск.</p>
 
+			@if ($errors->any())
+    			<div class="alert alert-danger">
+    			    <ul>
+    			        @foreach ($errors->all() as $error)
+    			            <li>{{ $error }}</li>
+    			        @endforeach
+    			    </ul>
+    			</div>
+			@endif
+
 			<form method="get" action="{{ route('message') }}">
 				{{ csrf_field() }}
 				<div class="row">

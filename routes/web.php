@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Validator;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,19 @@ Route::get('/message', function (Request $request) {
     $name       = mb_convert_case($request->input('name'), MB_CASE_TITLE, "UTF-8");
     $email      = $request->input('email');
     $message    = $request->input('message');
+
+
+    $validator = Validator::make($request->all(), [
+        'name' => 'required',
+        'email' => 'required',
+    ]);
+
+    if ($validator->fails()) {
+        return redirect('/#contact')
+                    ->withErrors($validator)
+                    ->withInput();
+    }
+
 
     return view('message', [
         'name'      => $name,
