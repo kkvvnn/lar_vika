@@ -27,10 +27,16 @@ Route::get('/message', function (Request $request) {
     $message    = $request->input('message');
 
 
+    $messages = [
+        'required' => 'Поле :attribute обязательно для заполнения!',
+        'email'  => 'Поле :attribute должно быть корректным адресом e-mail',
+    ];
+
     $validator = Validator::make($request->all(), [
         'name' => 'required',
-        'email' => 'required',
-    ]);
+        'email' => 'nullable|email',
+        'message' => 'required',
+    ], $messages);
 
     if ($validator->fails()) {
         return redirect('/#contact')
