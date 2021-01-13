@@ -122,11 +122,11 @@
 			<form method="post" action="{{ route('message') }}">
 				{{ csrf_field() }}
 				<div class="row">
-					<div class="col-6 col-12-mobile"><label for="name">Имя</label><input type="text" name="name" placeholder="Name" value="{{ old('name') }}" required aria-required=”true”/></div>
+					<div class="col-6 col-12-mobile"><label for="name">Имя</label><input type="text" name="name" placeholder="Name" value="{{ old('name') }}"/></div>
 					<div class="col-6 col-12-mobile"><label for="email">E-mail</label><input type="text" name="email" placeholder="Email" value="{{ old('email') }}"/></div>
 					<div class="col-12">
 						<label for="message">Сообщение</label>
-						<textarea name="message" placeholder="Message" required aria-required=”true”>{{ old('message') }}</textarea>
+						<textarea name="message" placeholder="Message">{{ old('message') }}</textarea>
 					</div>
 					<div class="col-12">
 						<input type="submit" value="Отправить сообщение" />
