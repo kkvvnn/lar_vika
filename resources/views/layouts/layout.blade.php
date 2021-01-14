@@ -46,10 +46,10 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="https://vk.com/id247827533" class="icon brands fa-vk"><span class="label">Vk</span></a></li>
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="#" class="icon brands fa-vk"><span class="label">Email</span></a></li>
 						</ul>
 
 				</div>
