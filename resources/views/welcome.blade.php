@@ -1,11 +1,11 @@
 @extends('layouts.layout')
 
+@section('content')
+
 @section('sidebar')
     @parent
 
 @endsection
-
-@section('content')
 
 <!-- Intro -->
 	<section id="top" class="one dark cover">
