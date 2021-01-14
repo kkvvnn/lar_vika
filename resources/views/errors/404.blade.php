@@ -1,11 +1,12 @@
 @extends('layouts.layout')
 
-@section('content')
+@section('sidebar')
 
-    @section('sidebar')
+    <li><a href="{{ route('welcome') }}" id="top-link" class="active"><span class="icon solid fa-home">Главная</span></a></li>
     
+@endsection
 
-    @endsection
+@section('content')
 
 <style>
 html, body {
@@ -114,7 +115,7 @@ html, body {
     
     <!--h1(data-h1='500') 500-->
     <!--p(data-p='SERVER ERROR') SERVER ERROR-->
-    <a href="{{ route('welcome') }}" class="button scrolly">GO HOME</a>
+    <!-- <a href="{{ route('welcome') }}" class="button scrolly">GO HOME</a> -->
   </div>
 </div>
 

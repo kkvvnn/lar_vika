@@ -1,11 +1,12 @@
 @extends('layouts.layout')
 
-@section('content')
+@section('sidebar')
 
-    @section('sidebar')
+    <li><a href="{{ route('welcome') }}" id="top-link" class="active"><span class="icon solid fa-home">Главная</span></a></li>
     
+@endsection
 
-    @endsection
+@section('content')
 
     <section class="two">
         <!-- <p>{{ $name }}</p> -->
